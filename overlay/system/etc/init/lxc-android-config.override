@@ -8,4 +8,5 @@ pre-start script
         mkdir -p /sys/fs/cgroup/systemd
         mount -t cgroup cgroup /sys/fs/cgroup/systemd -o name=systemd
     fi
+    umount -l /sys/fs/cgroup/schedtune || true
 end script
