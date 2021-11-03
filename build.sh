@@ -102,8 +102,8 @@ cp -av overlay/* "${TMP}/"
 "$SCRIPT/build-tarball-mainline.sh" "${deviceinfo_codename}" "${OUT}" "${TMP}"
 
 if [ -z "$BUILD_DIR" ]; then
-    rm -r "${TMP}"
-    rm -r "${TMPDOWN}"
+    rm -rf "${TMP}"
+    rm -rf "${TMPDOWN}"
 fi
 
 echo "done"
